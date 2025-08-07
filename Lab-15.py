@@ -32,7 +32,7 @@ else:
     I = (3*h/ 8) * (ypoints[0] + 3 * S1 + 2 * S2 + ypoints[n])
     print(f"The approximation integral by Simpson's 3/8 rule is {I}")
 
-    # Plotting
+
     plt.plot(x, ypoints, color='r', label='Sampled Points')
     xval = np.linspace(a - 10, b + 10, 1000)
     plt.plot(xval, [y(val) for val in xval], label='Eqn in curve')
